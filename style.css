@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    outline: none;
+    border: 2px solid #c3c3c3;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4342ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currencyConventerContainer{
+    width: 350px;
+    min-height: 415px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+}
+.AmountContainer{
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.AmountContainer input{
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+}
+.AmountContainer span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.currencies{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.currencies span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.dropDown{
+    min-width: 110px;
+    border: 2px solid #c3c3c3;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.dropDown select{
+    border: none;
+    height: 100%;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    width: 58px;
+}
+.currencies > img{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.CountryImage{
+    width: 31px;
+    height: 20px;
+    background-color: #4342ff;
+    margin-top: -1px;
+    margin-right: 2px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://flagcdn.com/w320/vg.png");
+    border: 1px solid #c3c3c3;
+}
+.Total{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.GetRate{
+    margin-top: 25px;
+    background-color: #5041fe;
+    width: 100%;
+    height: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+@media screen and (max-width:500px){
+    .currencyConventerContainer{
+        width: 305px;
+        min-height: 390px;
+        padding: 30px 20px;
+    }
+}

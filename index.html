@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currencies convertor</title>
+    <link rel="icon" href="./img/exchange.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="currencyConventerContainer">
+            <h2>Currency Conventer</h2>
+            <div class="AmountContainer">
+                <span>Enter Amount</span>
+                <input id="amountInp" type="number">
+            </div>
+            <div class="currencies">
+                <div class="fromCurrencieContainer">
+                    <span>From</span>
+                    <div class="dropDown">
+                        <div class="fromCountryImage CountryImage"></div>
+                        <select id="fromSelect"></select>
+                    </div>
+                </div>
+                <img id="reversSelectValues" src="./img/arrow.PNG" alt="arrowsImage">
+                <div class="toCurrencieContainer">
+                    <span>To</span>
+                    <div class="dropDown">
+                        <div class="toCountryImage CountryImage"></div>
+                        <select id="toSelect"></select>
+                    </div>
+                </div>
+            </div>
+            <span class="Total">0</span>
+            <button class="GetRate">Get Exchange Rate</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
