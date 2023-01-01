@@ -76,6 +76,7 @@ input{
     cursor: pointer;
     outline: none;
     width: 58px;
+    background-color: transparent;
 }
 .currencies > img{
     margin-top: 30px;
